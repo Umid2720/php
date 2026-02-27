@@ -7,4 +7,15 @@
 
 -->
 
+<?php
+
 print "Hello, World!";
+
+$foo = "Assalomu alaykum, O'zbekistan!";
+$number = 42;
+
+print $foo;
+print "\n";
+
+print $number;
+print "\n";
