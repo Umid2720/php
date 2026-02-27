@@ -23,3 +23,15 @@ $number--;
 
 print $number;
 print "\n";
+
+$foo = "Salom, O'zbekiston!";      // string
+$number = 42;                      // integer
+$pi = 3.14;                       // float
+$isTrue = true;                   // boolean
+$nullValue = null;                // null
+$arr = [1, 2, 3, 4, 5];            // array
+$person = [                       // associative array
+    "name" => "Ali",
+    "age" => 30,
+    "city" => "Tashkent"
+];  
