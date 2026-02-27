@@ -17,5 +17,9 @@ $number = 42;
 print $foo;
 print "\n";
 
+$number++;
+$number++;
+$number--;
+
 print $number;
 print "\n";
