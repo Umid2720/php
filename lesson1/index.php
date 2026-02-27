@@ -64,3 +64,11 @@ foo("10", "15"); // 25
 ini_set('display_errors', '1');
 error_reporting(E_ALL);
 foo("10", "15"); // 25
+
+
+// Yuqoridagi misoldagi xatoda, qaysi qatorda qanday xato borligi haqida ma’lumot berilgan.
+
+// Dasturimizni serverga joylaganimizdan keyin, PHP birorta ham xato ko’rsatmasligi kerak. Chunki, har bir xato xakerlar uchun qimmatbaho ma’lumot bo’lishi mumkin. Buning uchun, ini_set va error_report() usullarimizning parametrlariga 0 ko'rsatamiz:
+ini_set('display_errors', '0');
+error_reporting(0);
+foo("10", "15"); // 25
