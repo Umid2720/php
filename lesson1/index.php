@@ -1,13 +1,12 @@
-<!-- 
+<?php
+declare(strict_types=1);
+/*
  php -v     php o'rnatilganligini tekshirish 
  php -a     interaktiv rejimda ishlash uchun
  ctrl c || ctrl d || exit    interaktiv rejimdan chiqish uchun
  php -S localhost:8505    vaqtinchalik web serverni yaratish
  ctrl c    web serverni to'xtatish uchun
-
--->
-
-<?php
+*/
 
 print "Hello, World!";
 
@@ -58,3 +57,10 @@ echo "<hr/>";
 foo("10", "15"); // 25
 
 // PHP’ni statik turlovchi dasturlash tiliga o’tkazib ishlatish maslahat beriladi. Buning uchun quyidagi kod har bir php faylining yuqori qismida bo’lishi shart: declare(strict_types=1);
+
+
+// Endi, PHP string’ni avtomatik tarzda int’ga o’tkazmaydi. Buning o’rniga xato chiqaradi. Xato php sozlamalarida o’chirilgan bo’lishi mumkin. Shuning uchun uni quyidagi qatorlar orqali yoqish mumkin:
+
+ini_set('display_errors', '1');
+error_reporting(E_ALL);
+foo("10", "15"); // 25
