@@ -90,3 +90,7 @@ print_r($foo);
 
 // Undan tashqari, PHP orqali ko’pliklarda kalitlarni string turida ham yaratish mumkin. Bunday turdagi ko’pliklar assotsiativ ko’pliklar deyiladi:
 
+print "<hr/>";
+$foo = ['givenName' => 'John', 'familyName' => 'Doe'];
+print_r($foo);
+
