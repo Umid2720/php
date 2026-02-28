@@ -79,6 +79,14 @@ $foo = ['John', 'Jack', 75 => 'Jackie', 'Jenny'];
 
 print $foo[0]; // John
 print $foo[1]; // Jack
-print $foo[2]; // xatolik, chunki 2 kaliti ko’rsatilmagan
+// print $foo[2]; // xatolik, chunki 2 kaliti ko’rsatilmagan
 print $foo[75]; // Jackie
 print $foo[76]; // Jenny
+
+// print_r() funksiyasi orqali ko’pliklar haqidagi ma’lumotlarni qulay formatda olish mumkin:
+
+print "<hr/>";
+print_r($foo);
+
+// Undan tashqari, PHP orqali ko’pliklarda kalitlarni string turida ham yaratish mumkin. Bunday turdagi ko’pliklar assotsiativ ko’pliklar deyiladi:
+
