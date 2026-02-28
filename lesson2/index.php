@@ -40,3 +40,17 @@ $eshshak->sayMyName(); // Mening ismim Eshshak
 $hayton = new Hayvon();
 $hayton-> name = "Jipiriq";
 $hayton->sayMyName(); // Mening ismim Jipiriq
+
+// PHP’da ko’plik yaratayotganda, uning nechta elementi bo’lishini ko’rsatmaymiz.  Ko’plikka yangi qiymat qo’shilganda, php avtomatik ravishda ko’plik hajmini kengaytirib boraveradi:
+
+$foo = [];
+$foo[0] = 'John';
+$foo[1] = 'Jack';
+$foo[2] = 'Jackie';
+$foo[3] = 'Jenny';
+
+print $foo[0]; // John
+print $foo[1]; // Jack
+print $foo[2]; // Jackie
+print $foo[3]; // Jenny
+
