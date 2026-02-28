@@ -54,3 +54,20 @@ print $foo[1]; // Jack
 print $foo[2]; // Jackie
 print $foo[3]; // Jenny
 
+// Ko’plikka yangi qiymat qo’shayotganda, uning kalitlarini (index) bo'sh qoldirishimiz mumkin. Kalitlar avtomatik ravishda, tartib bilan yaratiladi:
+
+$arr[] = 'John';
+$arr[] = 'Jack';
+$arr[] = 'Jackie';
+$arr[] = 'Jenny';
+
+print '<h1>Assalomu alaykum</h1>';
+print $arr[0]; // John
+print $arr[1]; // Jack
+print $arr[2]; // Jackie
+print $arr[3]; // Jenny
+
+// Ko’plik yaratayotganda, birdaniga uning qiymatlarini ham ko’rsatish mumkin:
+$foo = ['John', 'Jack', 'Jackie', 'Jenny'];
+print $foo[2];
+
