@@ -71,3 +71,14 @@ print $arr[3]; // Jenny
 $foo = ['John', 'Jack', 'Jackie', 'Jenny'];
 print $foo[2];
 
+// Shu bilan birga, ko’plik yaratayotganda, qiymatning kalitlarini ham ko’rsatish mumkin. Buning uchun teng va katta belgisidan (=>) keyin kalit qo’yiladi va PHP avtomatik undan keyingi qiymatlarga tartib bilan kalitlarni qo’yadi:
+
+// Agar, mavjud bo’lmagan kalit kiritsangiz, xato chiqadi:
+
+$foo = ['John', 'Jack', 75 => 'Jackie', 'Jenny'];
+
+print $foo[0]; // John
+print $foo[1]; // Jack
+print $foo[2]; // xatolik, chunki 2 kaliti ko’rsatilmagan
+print $foo[75]; // Jackie
+print $foo[76]; // Jenny
