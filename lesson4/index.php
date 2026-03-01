@@ -16,6 +16,10 @@ error_reporting(E_ALL);
 <body>
 
     <h1>Assalomu alaykum!!!</h1>
+
+    <form>
+        Ismingiz: <input type="text">
+    </form>
     
 </body>
 </html>
