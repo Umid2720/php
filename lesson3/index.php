@@ -14,7 +14,7 @@ print $foo;
 
 
 // Ko’plik kalitlarini ham yaratganda, uning tartibining ahamiyati yo’q:
-$foo = [74 => 'John', 0 => 'Jack', 1087 => 'Jackie'];
+$foo = [74 => 'John', 0 => 'Jack', 1087 => 'Jackie', 'gashr'=> 'so"k'];
 
 var_dump($foo);
 
@@ -28,8 +28,12 @@ var_dump(isset($gashr));
 print('<hr>');
 var_dump(isset($foo));
 
+// isset() funksiyasi orqali biror ko’plikning kaliti bor, yoki yo’qligini ham tekshirish mumkin:
 
-
+print('<hr>');
+var_dump(isset($foo['0']));
+var_dump(isset($foo[0]));
+var_dump(isset($foo['gashr']));
 
 
 
