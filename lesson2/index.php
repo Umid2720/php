@@ -94,3 +94,5 @@ print "<hr/>";
 $foo = ['givenName' => 'John', 'familyName' => 'Doe'];
 print_r($foo);
 
+print $foo['givenName'];
+print $foo['familyName'];
