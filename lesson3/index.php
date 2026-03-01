@@ -35,6 +35,20 @@ var_dump(isset($foo['0']));
 var_dump(isset($foo[0]));
 var_dump(isset($foo['gashr']));
 
+// isset() funksiyasiga istalgancha argument yuborishimiz mumkin. Agar, ularning barchasi, mavjud bo’lsa, funksiya true qaytaradi. Bo’lmasa - false:
+
+
+print('<hr>');
+$result = isset($foo['givenName'], $foo['familyName']);
+var_dump($result);
+
+print('<hr>');
+$result = isset($foo['0'], $foo['1087']);
+var_dump($result);
+
+
+
+
 
 
 
