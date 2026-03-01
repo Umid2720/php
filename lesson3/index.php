@@ -20,6 +20,13 @@ var_dump($foo);
 
 print $foo[0];
 
+// isset() funksiyasiga argument sifatida o’zgaruvchan yuborsak, u bizga boolen turiga mansub javob qaytaradi. Agar, yuborgan o’zgaruvchanimiz PHP’ga ma’lum bo’lsa, ya’ni u oldinroq yaratilgan bo’lsa, isset() true qaytaradi, bo’lmasa false:
+
+print('<hr>');
+var_dump(isset($gashr));
+
+print('<hr>');
+var_dump(isset($foo));
 
 
 
