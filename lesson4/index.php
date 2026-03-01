@@ -7,6 +7,27 @@ error_reporting(E_ALL);
 
 // Php’da $_GET super global ko’pligi bor. Bu ko’plikda GET so’rovlari joylashgan bo’ladi:
 print_r($_GET);
+
+// Funksiya ichida uning tashqarisidagi o’zgaruvchanlarni ishlatib bo’lmaydi: 
+$bar = 'var';
+
+function foo(): void
+{
+    $bar = 45;
+    print $bar;
+}
+
+foo();
+
+// Funksiyaga ta’sir qilishning birdan-bir yo’li - bu uning parametrlaridir.
+// Funksiya ichidagi va undan tashqarisidagi o’zgaruvchanlarning nomi bir bo’lsa ham, aslida bir-birga aloqasi yo’q. Funksiya ichida yaratilgan o’zgaruvchanlar, tashqaridagilarga ta’sir qilmaydi va aksi: tashqaridagilar funksiya ichiga ta’sir qilmaydi:
+
+
+
+
+
+
+
 ?>
 
 <!DOCTYPE html>
