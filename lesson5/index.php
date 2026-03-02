@@ -87,8 +87,33 @@ print_r(getUserInfo(1));
 
         2. Agar, ma’lumotlar post http usuli (method) orqali jo’natilgan bo’lsa, PHP’da ushbu ma’lumotlarni $_POST super global ko’pligi orqali topamiz:
 
+        3. HTTP so’rovlarining usullari:
+            GET (Biror ma’lumotni olish uchun ishlatiladi. URL’da ko’rinib turadi)
+            POST (Yangi ma’lumotni qo’shish uchun ishlatiladi)
+            PUT (Ma’lumotni almashtirish (to’liq o’zgartirish) uchun ishlatiladi)
+            PATCH (Ma'lumotni (qisman) o’zgartirish uchun ishlatiladi)
+            DELETE (Ma’lumotni o’chirish uchun ishlatiladi)
+ 
 
+        4. HTTP javoblarining status kodlari:
+            
+        4.1 Hammasi joyida
+            200 - Ok. Hammasi joyida. Get so’rovlarida muvaffaqiyatli javob sifatida qaytariladi.
+            201 - Created. Yaratildi. Post so’rovlarida muvaffaqiyatli javob sifatida qaytariladi.
+            204 - No content. Kontentsiz. Muvaffaqiyatli, lekin hech narsa qaytarilmaydi. Odatda, delete so’rovlariga javob.
 
+            4.2 Foydalanuvchi xatosi
+                400 - Bad request. So’rov noto’g’ri berilgan.
+                401 - Unauthorized. Avtorizatsiyadan o’tmagan.
+                403 - Forbidden. ushbu so’rov uchun vakolatingiz yo’q.
+                404 - Not found. Topilmadi.
+                405 - Method not allowed. Ushbu so’rovga, ushbu http usul orqali murojaat qilish mumkin emas. 
+
+            4.3 Dasturiy xato
+                500 - Internet server error. Yuqoridagilar aslida xato emas edi, dasturimiz ishlab
+                turgan edi. Shunchaki foydalanuvchiga ma’lumot berilayotgan edi: “Hammasi
+                joyida”, “Ma’lumot topilmadi” va hokazo deb. 500-status esa, biz kutmagan -
+                dasturimizdagi, kodimizdagi xato. Uni tuzatish kerak.
      -->
 
 </body>
